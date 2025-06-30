@@ -17,29 +17,29 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="dark">
+      <body className={`${inter.className} bg-gray-900 text-white`}>
         {children}
         <Toaster 
           position="top-right"
           toastOptions={{
             duration: 4000,
             style: {
-              background: '#363636',
+              background: '#22223b',
               color: '#fff',
             },
             success: {
               duration: 3000,
               iconTheme: {
                 primary: '#10b981',
-                secondary: '#fff',
+                secondary: '#22223b',
               },
             },
             error: {
               duration: 5000,
               iconTheme: {
                 primary: '#ef4444',
-                secondary: '#fff',
+                secondary: '#22223b',
               },
             },
           }}
